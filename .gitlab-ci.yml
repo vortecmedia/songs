@@ -1,0 +1,6 @@
+variables:
+  AWS_ACCESS_KEY_ID: "AKIAIOSFODNN7EXAMPLE"
+  AWS_SECRET_ACCESS_KEY: “wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY”
+deploy:
+  script: aws s3 cp ./ s3://yourbucket/ --recursive --exclude "*" --include "*.html"
+  
